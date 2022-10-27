@@ -1,5 +1,6 @@
 import React from 'react'
 import Main from './components/Main.jsx'
+import Messages from './components/Messages.jsx'
 
 export default function Login({ messages}) {
     return (
@@ -13,7 +14,7 @@ export default function Login({ messages}) {
             messages.info.forEach( el => { %>
             <div className="alert alert-info"><%= el.msg %></div>
             <% }) %> <% } %> */}
-            {messages.errors  
+            {/* {messages.errors  
                 ? messages.errors.map((el,i)=>
                     <div key={i} className="alert alert-danger">{el.msg}</div>  
                 )   
@@ -24,7 +25,8 @@ export default function Login({ messages}) {
                   <div key={i} className="alert alert-info">{el.msg}</div>  
                 )   
                 : null 
-            }
+            } */}
+            <Messages messages={messages} />
             <form action="/login" method="POST">
                 <div className="mb-3">
                 <label for="exampleInputEmail1" className="form-label"
