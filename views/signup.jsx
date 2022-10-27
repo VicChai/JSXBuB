@@ -23,20 +23,20 @@ export default function Signup({messages}) {
                 <Messages messages={messages} />
                 <form action="/signup" method="POST">
                     <div className="mb-3">
-                        <label for="userName" className="form-label">User Name</label>
+                        <label htmlFor="userName" className="form-label">User Name</label>
                         <input type="text" className="form-control" id="userName" name="userName" />
                       </div>
                     <div className="mb-3">
-                      <label for="exampleInputEmail1" className="form-label">Email address</label>
+                      <label htmlFor="exampleInputEmail1" className="form-label">Email address</label>
                       <input type="email" className="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" name="email" />
                       <div id="emailHelp" className="form-text">We'll never share your email with anyone else.</div>
                     </div>
                     <div className="mb-3">
-                      <label for="password" className="form-label">Password</label>
+                      <label htmlFor="password" className="form-label">Password</label>
                       <input type="password" className="form-control" id="password" name="password" />
                     </div>
                     <div className="mb-3">
-                        <label for="confirmPassword" className="form-label">Confirm Password</label>
+                        <label htmlFor="confirmPassword" className="form-label">Confirm Password</label>
                         <input type="password" className="form-control" id="confirmPassword" name="confirmPassword" />
                       </div>
                     <button type="submit" className="btn btn-primary">Submit</button>

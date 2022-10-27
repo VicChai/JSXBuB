@@ -29,7 +29,7 @@ export default function Login({ messages}) {
             <Messages messages={messages} />
             <form action="/login" method="POST">
                 <div className="mb-3">
-                <label for="exampleInputEmail1" className="form-label"
+                <label htmlFor="exampleInputEmail1" className="form-label"
                     >Email address</label
                 >
                 <input
@@ -41,7 +41,7 @@ export default function Login({ messages}) {
                 />
                 </div>
                 <div className="mb-3">
-                <label for="exampleInputPassword1" className="form-label">Password</label>
+                <label htmlFor="exampleInputPassword1" className="form-label">Password</label>
                 <input
                     type="password"
                     className="form-control"
